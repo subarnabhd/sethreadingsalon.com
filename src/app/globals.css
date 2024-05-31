@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+/* -------- */
+
+
+:root {
+  --primary: #73448D;
+  --primary-md-dark: #3B1550;
+  --primary-dark: #220033;
+  --secondary: #F9B7FF;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.header {
+  background-color: var(--primary);
+}
+.header ul a{
+  padding: 10px 18px;
+}
+.header ul a:hover{
+  background-color: var(--primary-md-dark);
+  border-radius: 100px;
+}
+
+.footer {
+  background-color: var(--primary-md-dark);
+}
+
+.copywrite {
+  background-color: var(--primary-dark);
+  font-size: 14px;
+}
+
+.titlebar {
+  background-color: var(--secondary);
+  font-size: 34px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.about{
+  background-color: var(--white);
+  color: var(--black);
+}
+.gallery{
+  background-color: var(--white);
+
+
+}
