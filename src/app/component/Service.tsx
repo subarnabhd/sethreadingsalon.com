@@ -4,7 +4,7 @@ import React from 'react'
 const Service = () => {
   return (
    
-    <div className="services-box container p-10 flex gap-10  max-w-screen-xl md:column ">
+    <div className="services-box container p-10 flex gap-10  max-w-screen-xl ">
 
       <div className=" service-info rounded-2xl text-center m-auto p-10 flex justify-center flex-col border-2 border-slate-100 bg-white">
         <Image className="center text-center m-auto rounded-2xl" src="/1.jpg" width={225} height={100} alt='' />

@@ -223,3 +223,12 @@ tbody tr td {
 }
 
 /* Footer------------- */
+
+@media only screen and (max-width: 600px) {
+  .services-box {
+  display: block;
+  }
+  .service-info {
+    margin: 10px 0;
+    }
+}
