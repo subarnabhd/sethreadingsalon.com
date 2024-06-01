@@ -33,49 +33,193 @@ body {
 
 /* -------- */
 
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-md-dark {
+  background-color: var(--primary-md-dark);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.c-black {
+  color: var(--black);
+}
+
+.c-primary {
+  color: var(--primary);
+}
+
+.c-primary-dark {
+  color: var(--primary-dark);
+}
+
+.c-primary-md-dark {
+  color: var(--primary-md-dark);
+}
+
+.c-secondary {
+  color: var(--secondary);
+}
+
+.c-secondary-dark {
+  color: var(--secondary-dark);
+}
+
+.bg-background{
+  background-color: var(--background);
+}
 
 :root {
   --primary: #73448D;
   --primary-md-dark: #3B1550;
   --primary-dark: #220033;
   --secondary: #F9B7FF;
+  --secondary-dark: #eb67f7;
+  --background: #fbf5fb;
   --white: #ffffff;
   --black: #000000;
 }
 
-.header {
+.header ul a:hover {
+  background-color: var(--primary-md-dark);
+}
+
+table,
+.service-conatiner {
+  margin: auto;
+  max-width: 500px;
+  /* min-width: 500px; */
+  width: 100%;
+}
+
+.services-box{
+  margin-top: -200px;
+}
+
+thead th {
+  border: 1px solid #9059ae;
+}
+
+tbody tr td {
+  background-color: #ffffff;
+  color: var(--primary-dark);
+  padding: 12px;
+  border: 1px solid #f1f1f1;
+}
+
+.slider {
+  background-image: url(/banner4.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+
+}
+
+.overlay {
+  min-height: 600px;
+  background-color: #21002564;
+}
+
+
+.contact-details svg{
+ font-size: 22px;
+}
+
+
+/* Button------ */
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.border-btn {
+  border: 1px solid white;
+}
+
+.border-btn:hover {
+  border: 1px solid var(--primary);
+}
+
+.primary-btn {
+  background-color: var(--primary-md-dark);
+}
+
+.btn:hover {
   background-color: var(--primary);
 }
-.header ul a{
-  padding: 10px 18px;
+
+/* Button------ */
+
+
+
+
+
+/* Footer------------- */
+.footer a:hover {
+  color: #F9B7FF;
 }
-.header ul a:hover{
-  background-color: var(--primary-md-dark);
+
+
+.social-icon a:hover {
+  color: var(--primary-dark);
+  background-color: var(--secondary);
+}
+
+
+.footer li svg {
+  height: 26px;
+  width: 26px !important;
+  background-color: var(--secondary);
+  padding: 5px 8px;
   border-radius: 100px;
 }
 
-.footer {
-  background-color: var(--primary-md-dark);
-}
-
-.copywrite {
-  background-color: var(--primary-dark);
-  font-size: 14px;
-}
-
-.titlebar {
-  background-color: var(--secondary);
-  font-size: 34px;
-  color: var(--primary);
-  font-weight: 700;
-}
-
-.about{
-  background-color: var(--white);
-  color: var(--black);
-}
-.gallery{
-  background-color: var(--white);
-
+.footer li svg:hover {
+  background-color: var(--primary);
+  color: var(--white);
 
 }
+
+.footer li a:hover svg {
+  background-color: var(--primary);
+  color: var(--white);
+
+}
+
+.copywrite a {
+  color: var(--white);
+}
+
+.copywrite a:hover {
+  color: var(--secondary-dark);
+}
+
+/* Footer------------- */
